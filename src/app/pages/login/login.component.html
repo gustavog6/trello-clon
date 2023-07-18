@@ -45,7 +45,11 @@
             />
           </div>
           <div class="relative">
-            <app-btn [btnType]="'submit'" [color]="'success'">Continue</app-btn>
+            <a [routerLink]="'/boards'">
+              <app-btn [btnType]="'submit'" [color]="'success'">
+                Continue
+              </app-btn>
+            </a>
           </div>
           <div class="relative">
             <p class="font-thin text-xs text-center">OR</p>
@@ -91,15 +95,13 @@
         <div class="text-center">
           <ul class="block">
             <li class="inline-block list-none">
-              <a
-                class="text-blue-400 font-thin font-xs"
-                routerLink="/forgot-password"
+              <a class="text-blue-400 font-thin font-xs" routerLink="/#"
                 >cant log in?</a
               >
             </li>
             <span class="px-2">•</span>
             <li class="inline-block list-none">
-              <a class="text-blue-400 font-thin font-xs" routerLink="/register"
+              <a class="text-blue-400 font-thin font-xs" routerLink="/#"
                 >sign up for an account</a
               >
             </li>
